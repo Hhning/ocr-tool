@@ -1,0 +1,15 @@
+<configuration>
+  <id>SigmaOCR</id>
+  <name>SigmaOCR</name>
+  <description>Automatically synchronize from modalities</description>
+  <executable>C:\Program Files (x86)\SigmaOCR\autoserv.exe</executable>
+  <onfailure action="restart" delay="10 sec"/>
+  <workingdirectory>C:\Program Files (x86)\SigmaOCR</workingdirectory>
+  <priority>Normal</priority>
+  <stoptimeout>15 sec</stoptimeout>
+  <stopparentprocessfirst>false</stopparentprocessfirst>
+  <startmode>Automatic</startmode>
+  <waithint>15 sec</waithint>
+  <sleeptime>1 sec</sleeptime>
+  <log mode="append"></log>
+</configuration>

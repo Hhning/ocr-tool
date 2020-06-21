@@ -1,0 +1,9 @@
+{
+    "server": "http://192.168.10.9:7070",
+    "website": "http://192.168.10.9:8008",
+    "account": "sigma",
+    "username": "test",
+    "password": "MTIzNDU2",
+    "remote-ip": "192.168.1.197",
+    "remote-mac-address": "BC-A8-A6-5E-C0-AD"
+}

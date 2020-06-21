@@ -1,0 +1,21 @@
+version: '3.2'
+services:
+  buoyserver:
+    build:
+        context: .
+        dockerfile: Dockerfile-BuoyServer
+    image: buoyserver:1.1.0
+    network_mode: host
+    volumes:
+        - /etc/localtime:/etc/localtime
+        - ./12sigma/sigmaocr/conf:/opt/sigma-ocr/conf
+        - ./12sigma/sigmadicom/conf/local.json:/opt/sigma-ocr/conf/local.json
+        - ./12sigma/sigmaocr/log:/root/12sigma/log
+        - ./12sigma/sigmaocr/ocr:/root/12sigma/ocr
+    command: >
+       bash -c "python3.6 /opt/sigma-ocr/init.py &&
+                supervisord -c /etc/supervisord.conf && bash"
+    depends_on:
+        - "sigmadicom"
+    tty: true
+    privileged: true

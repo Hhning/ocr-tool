@@ -1,0 +1,53 @@
+{
+    "OCR": {
+        "manualMode": true,
+        "manual": {
+            "shortcut": "F3",
+            "timeout": 3.0
+        },
+        "automatic": {
+            "interval": 2.0,
+            "rect": []
+        },
+        "zoom": {
+            "mode": "pixel",
+            "x": 10,
+            "y": 10
+        }
+    },
+    "Server": {
+        "endpoint": "http://127.0.0.1:7002",
+        "keyword": "patient_id"
+    },
+    "Launcher": {
+        "path": {
+            "Local": "C:\\Program Files\\Intrasense\\Myrian",
+            "ISLP": "C:\\Program Files\\Intrasense\\Myrian",
+            "Citrix": "C:\\Program Files (x86)\\Citrix\\ICA Client\\SelfServicePlugin",
+            "CitrixXP": "",
+            "Web": ""
+        },
+        "params": {
+            "lung_nodule_det": "-protocol=sigmadiscoverlung -loadoptions=onepatient -autoload={patient_id},,{series_id},,",
+            "lung_dr_det": "-protocol=sampsigmaDrLung -loadoptions=onepatient -autoload={patient_id},,{series_id},,",
+            "mammo_det": "-protocol=sigmadiscovermammo -loadoptions=onepatient -autoload={patient_id},{study_id},,,",
+            "brain_det": "-protocol=sigmaCADStroke -loadoptions=onepatient -autoload={patient_id},,{series_id},,",
+            "liver_det": "-protocol=sigmaCADLiver -loadoptions=onepatient -autoload={patient_id},{study_id},,,"
+        },
+        "command": {
+            "Local": "\"{path}/Ispilot.exe\" {params}",
+            "ISLP": "\"{path}/Ispilot.exe\" {params}",
+            "Citrix": "\"{path}/SelfService.exe\" -qlaunch Ispilot \"{params}\"",
+            "CitrixXP": "\"{path}/Ispilot.exe\" \"{params}\"",
+            "Web": "{}/#/home/patient/{}/{}"
+        },
+        "type": "Citrix",
+        "detections": [
+            "lung_nodule_det"
+        ],
+        "options": {
+            "autoOpen": false
+        }
+    },
+    "Debug": false
+}

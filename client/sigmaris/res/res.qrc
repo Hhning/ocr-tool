@@ -1,0 +1,30 @@
+<RCC>
+  <qresource prefix="12sigma">
+    <file alias="frame">frame.ui</file>
+    <file alias="settings">settings.ui</file>
+    <file alias="bbox">bbox.ui</file>
+    <file alias="icon">images/logo.ico</file>
+    <file alias="tray">images/tray.png</file>
+    <file alias="default">images/default.png</file>
+    <file alias="health">images/health.png</file>
+    <file alias="disease">images/disease.png</file>
+    <file alias="pending">images/pending.png</file>
+    <file alias="warning">images/warning.png</file>
+    <file alias="lung_nodule_det">images/lung_nodule_det.png</file>
+    <file alias="lung_dr_det">images/lung_dr_det.png</file>
+    <file alias="mammo_det">images/mammo_det.png</file>
+    <file alias="brain_det">images/brain_det.png</file>
+    <file alias="liver_det">images/liver_det.png</file>
+    <file alias="style">style.qss</file>
+    <file alias="qt_zh_CN">translations/qt_zh_CN.qm</file>
+    <file alias="zh_CN">translations/zh_CN.qm</file>
+  </qresource>
+  <qresource prefix="demo">
+    <file alias="default">images/demo_default.png</file>
+    <file alias="health">images/demo_health.png</file>
+    <file alias="disease">images/demo_disease.png</file>
+    <file alias="pending">images/demo_pending.png</file>
+    <file alias="warning">images/demo_warning.png</file>
+    <file alias="error">images/demo_error.png</file>
+  </qresource>
+</RCC>

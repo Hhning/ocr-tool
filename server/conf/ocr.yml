@@ -1,0 +1,18 @@
+# Set the work space and schedule strategy
+
+database:
+    mongodb:
+        db_name: 'sigmadicom'
+        hostnames: '127.0.0.1:27017'
+    # sqlite:
+    #     db_name: 'C:\12sigma\autorun\db\autorun.db'
+server:
+    endpoint: 'http://127.0.0.1:7070'
+    key: 'c6X7d2MUKiY26Xm8nuTX5w=='
+    secret: 'D52lRKO2870hGUFKA2dKkhdSsaI='
+    account: 'sigma'
+ocr:
+    whitelist: '0123456789'
+    pattern: ''
+    length: -1
+    offset: 10

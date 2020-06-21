@@ -1,0 +1,50 @@
+
+#container{
+    background:rgba(239,239,239,1);
+    /* box-shadow:0px 3px 4px 0px rgba(51,51,51,0.1); */
+}
+
+#SuspendFrame[status="-1"] #btnControl{
+    border-image: url(:/12sigma/default);
+}
+
+#SuspendFrame[status="0"] #btnControl{
+    border-image: url(:/12sigma/pending);
+}
+
+#SuspendFrame[status="1"] #btnControl{
+    border-image: url(:/12sigma/pending);
+}
+
+#SuspendFrame[status="2"] #btnControl{
+    border-image: url(:/12sigma/health);
+}
+
+#SuspendFrame[status="3"] #btnControl{
+    border-image: url(:/12sigma/disease);
+}
+
+#SuspendFrame[status="4"] #btnControl{
+    border-image: url(:/12sigma/warning);
+}
+
+#tipsLabel {
+    font-size:12px;
+    font-family: "Microsoft YaHei";
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:29px;
+    background:rgba(240,193,8,1);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* box-shadow:0px 3px 4px 0px rgba(51,51,51,0.1); */
+}
+
+#lineEdit {
+    border: none;
+    font-size:14px;
+    font-family: "Microsoft YaHei";
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:29px;
+}

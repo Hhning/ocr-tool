@@ -1,0 +1,6 @@
+PyQt5
+pywin32
+keyboard
+requests
+numpy
+opencv-python=3.2.0.8

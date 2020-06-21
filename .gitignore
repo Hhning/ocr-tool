@@ -1,0 +1,8 @@
+debug
+build
+dist
+log
+__pycache__
+.vscode
+svm.sav
+*.exe
